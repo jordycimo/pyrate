@@ -61,7 +61,7 @@ def logout():
 @app.route('/', defaults={'req_path': ''})
 @app.route('/<path:req_path>')
 def home(req_path):
-    BASE_DIR = '/home/js/password/static/'
+    BASE_DIR = '/home/js/pyrate/static/serve'
     abs_path = os.path.join(BASE_DIR, req_path)
     if not os.path.exists(abs_path):
         return abort(404)

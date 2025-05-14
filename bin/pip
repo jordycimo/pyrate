@@ -1,4 +1,4 @@
-#!/home/js/password/bin/python3
+#!/home/js/pyrate/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
