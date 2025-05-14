@@ -1,0 +1,59 @@
+body {
+  background-color: #444444;
+  .files {
+    border-style: outset;
+    border-width: 8px;
+    border-color: #313131;
+  }
+}
+
+h2 {
+  border-style: double;
+  border-color: black;
+  background-color: #222222;
+  color: #FFEEEE;
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  color: #FFEEEE;
+  content: "✿";
+}
+
+a:link {
+  color: #FFAAAA;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DDAAAA;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF6666;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FF0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #FFFFFF44;
+  border-style: none;
+  color: #FFDDDD;
+}
+
+button:active {
+  background-color: #FFFFFF;
+}

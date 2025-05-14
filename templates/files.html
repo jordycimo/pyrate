@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>✿ pyr8 ✿</title>
+  <h2>file listing for: {{ request.path }}</h2>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+
+ <body>
+  <div class="files">
+    <button onclick="window.history.back();">back ⮢</button>
+    <ul>
+      {% for file in files %}
+      <li>
+          <a href="{{ (request.path + '/' if request.path != '/' else '') + file }}">
+              {{ (request.path + '/' if request.path != '/' else '') + file }}
+          </a>
+      </li>
+    {% endfor %}
+     </ul>
+  </div>
+ </body>
+
+</html>
